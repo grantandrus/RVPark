@@ -9,4 +9,7 @@ Welcome to our project repository!
 - Member 3
 - Member 4
 - Member 5
-- Member 6
+- Grant Andrus: Hey guys I'm super excited to work on a real project with everyone
+      I hope we can all get allong and learn something from each other on the way.
+      I like to play any sport, I love video games, and of course I enjoy computer
+      programming.
