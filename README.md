@@ -13,4 +13,7 @@ Welcome to our project repository!
 - Member 4
   - Hello! My name is Porter Ballou, and I look forward to working on this project. Honestly, I can't pick a favorite hobby... programming, drawing, making music, game development, lifting--I like a lot of things! Not running, though. *shudder*
 - Member 5
-- Member 6
+- Grant Andrus: Hey guys I'm super excited to work on a real project with everyone
+      I hope we can all get allong and learn something from each other on the way.
+      I like to play any sport, I love video games, and of course I enjoy computer
+      programming.
