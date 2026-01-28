@@ -17,10 +17,10 @@ Hello, my name is Noah Chisholm. I am excited to work on this project. My favori
 - Porter Ballou
 Hello! My name is Porter Ballou, and I look forward to working on this project. Honestly, I can't pick a favorite hobby... programming, drawing, making music, game development, lifting--I like a lot of things! Not running, though. *shudder*
 
-- Member 5
+- Jordan Petty
+Hello, I am Jordan Petty, and I'm looking forward to this project. I like working on cars, video games, and rocketry.
 
-- Grant Andrus
-Hey guys I'm super excited to work on a real project with everyone
+- Grant Andrus: Hey guys I'm super excited to work on a real project with everyone
 I hope we can all get allong and learn something from each other on the way.
 I like to play any sport, I love video games, and of course I enjoy computer
 programming.
