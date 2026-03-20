@@ -1,0 +1,56 @@
+﻿@page
+@model ReservationsIndexModel
+@{
+    ViewData["Title"] = "Reservations";
+}
+
+<div class="reservations-header">
+    <h2>Reservations</h2>
+    <a class="btn btn-dark" asp-page="/Reservations/Create">+ New Reservation</a>
+</div>
+
+<table class="table table-striped table-hover mt-3">
+
+    <thead class="table-dark">
+        <tr>
+            <th>Site</th>
+            <th>Check-In</th>
+            <th>Check-Out</th>
+            <th>Guests</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @if (Model.Reservations?.Any() == true)
+        {
+            foreach (var r in Model.Reservations)
+            {
+                <tr>
+                    <td>@r.SiteNumber</td>
+                    <td>@r.CheckIn.ToShortDateString()</td>
+                    <td>@r.CheckOut.ToShortDateString()</td>
+                    <td>@r.GuestCount</td>
+                    <td>$@r.TotalCost</td>
+                    <td>@r.Status</td>
+                    <td>
+                        <a class="btn btn-sm btn-outline-primary" asp-page="/Reservations/Details" asp-route-id="@r.Id">View</a>
+                        <a class="btn btn-sm btn-outline-secondary" asp-page="/Reservations/Edit" asp-route-id="@r.Id">Edit</a>
+                        <a class="btn btn-sm btn-outline-danger" asp-page="/Reservations/Delete" asp-route-id="@r.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="7" class="text-center text-muted">
+                    No reservations found.
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

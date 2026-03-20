@@ -1,0 +1,21 @@
+﻿@page "{id:int}"
+@model DetailsModel
+@{
+    ViewData["Title"] = "Reservation Details";
+}
+
+<h2>Reservation Details</h2>
+
+<div class="card p-3">
+
+    <p><strong>Site:</strong> @Model.Reservation.SiteNumber</p>
+    <p><strong>Check-In:</strong> @Model.Reservation.CheckIn.ToShortDateString()</p>
+    <p><strong>Check-Out:</strong> @Model.Reservation.CheckOut.ToShortDateString()</p>
+    <p><strong>Guests:</strong> @Model.Reservation.GuestCount</p>
+    <p><strong>Total:</strong> $@Model.Reservation.TotalCost</p>
+    <p><strong>Status:</strong> @Model.Reservation.Status</p>
+
+</div>
+
+<a asp-page="Edit" asp-route-id="@Model.Reservation.Id" class="btn btn-dark mt-3">Edit</a>
+<a asp-page="Index" class="btn btn-secondary mt-3">Back</a>

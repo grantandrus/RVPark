@@ -1,0 +1,36 @@
+﻿@page "{id:int}"
+@model EditModel
+@{
+    ViewData["Title"] = "Edit Reservation";
+}
+
+<h2>Edit Reservation</h2>
+
+<form method="post">
+
+    <input type="hidden" asp-for="Reservation.Id" />
+
+    <div class="mb-3">
+        <label class="form-label">Site Number</label>
+        <input asp-for="Reservation.SiteNumber" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Check-In</label>
+        <input asp-for="Reservation.CheckIn" type="date" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Check-Out</label>
+        <input asp-for="Reservation.CheckOut" type="date" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Guests</label>
+        <input asp-for="Reservation.GuestCount" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-dark">Save Changes</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+
+</form>
