@@ -45,53 +45,6 @@ body {
 
 
 /**********************************************
-Home Page Styles
-**********************************************/
-.app-container {
-    display: flex;
-    height: 80vh;
-    background-color: #f4f4f4;
-}
-
-/* Main Content */
-.main-content {
-    flex-grow: 1;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Profile section */
-.profile-container {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Avatar */
-.avatar-icon {
-    font-size: 100px;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-/* Text */
-.contact {
-    margin-top: 10px;
-    color: #333;
-}
-
-/* Buttons */
-.button-group {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/**********************************************
 Navbar Styles
 **********************************************/
 
@@ -99,5 +52,66 @@ Navbar Styles
     background-color: #2E6F95;
 }
 
+/**********************************************
+Landing Page Styles
+**********************************************/
 
+.hero-section {
+    background: url('/images/campground-hero.jpg') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .hero-section h1 {
+        font-size: 3rem;
+        font-weight: bold;
     }
+
+    .hero-section p {
+        font-size: 1.3rem;
+    }
+
+/**********************************************
+Profile Styles
+**********************************************/
+
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 500px;
+}
+
+.profile-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.avatar-icon i {
+    color: #6c757d;
+}
+
+.contact {
+    font-size: 1.1rem;
+    margin: 0.2rem 0;
+}
+
+.button-group .btn {
+    min-width: 300px;
+    margin: 0.2rem;
+}
+
+.form-group {
+    margin-bottom: 0.4rem;
+}

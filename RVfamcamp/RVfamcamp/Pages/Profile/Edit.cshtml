@@ -1,0 +1,47 @@
+﻿@page
+@model RVPark.Pages.Profile.EditModel
+@{
+    ViewData["Title"] = "Edit Profile";
+}
+
+<div class="app-container">
+    <div class="main-content">
+        <div class="profile-container card p-4 shadow-sm">
+            <h2>@ViewData["Title"]</h2>
+            <form method="post">
+                <div class="form-group">
+                    <label asp-for="Profile.FirstName"></label>
+                    <input asp-for="Profile.FirstName" class="form-control" />
+                    <span asp-validation-for="Profile.FirstName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Profile.LastName"></label>
+                    <input asp-for="Profile.LastName" class="form-control" />
+                    <span asp-validation-for="Profile.LastName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Profile.Email"></label>
+                    <input asp-for="Profile.Email" class="form-control" />
+                    <span asp-validation-for="Profile.Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Profile.Phone"></label>
+                    <input asp-for="Profile.Phone" class="form-control" />
+                    <span asp-validation-for="Profile.Phone" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Profile.DateOfBirth"></label>
+                    <input asp-for="Profile.DateOfBirth" type="date" class="form-control" />
+                    <span asp-validation-for="Profile.DateOfBirth" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-success">Save Changes</button>
+                <a asp-page="./Index" class="btn btn-secondary">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>

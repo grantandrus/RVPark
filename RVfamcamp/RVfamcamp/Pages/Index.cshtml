@@ -1,31 +1,39 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Client Profile";
+    ViewData["Title"] = "RVfamcamp";
 }
 
-<div class="app-container">
+<div class="hero-section text-white text-center d-flex flex-column justify-content-center align-items-center">
+    <h1>Your Family Camping Experience Starts Here</h1>
+    <p>Reserve, manage your profile, and enjoy your stay at RVfamcamp.</p>
+    <div class="mt-3">
+        <a asp-page="/Reservations/Index" class="btn btn-primary btn-lg me-2">Make a Reservation</a>
+        <a asp-page="/Profile/Index" class="btn btn-secondary btn-lg">View Profile</a>
+    </div>
+</div>
 
-    <!-- Main Content -->
-    <div class="main-content">
-
-        <!-- Profile Card -->
-        <div class="profile-container">
-
-            <div class="avatar-icon">
-                <i class="bi bi-person-circle"></i>
-            </div>
-
-            <p class="contact">(999) 999-9999</p>
-            <p class="contact">example@mail.com</p>
-
-            <div class="button-group">
-                <button class="btn btn-secondary">Edit Personal Info</button>
-                <button class="btn btn-secondary">Set Vehicle</button>
-                <button class="btn btn-secondary">Edit Payment Info</button>
-            </div>
-
+<div class="container my-5">
+    <div class="row text-center">
+        <div class="col-md-3">
+            <i class="bi bi-check-circle-fill fs-1 mb-2"></i>
+            <h5>Easy Reservations</h5>
+            <p>Book your spot online in just a few clicks.</p>
+        </div>
+        <div class="col-md-3">
+            <i class="bi bi-truck-front fs-1 mb-2"></i>
+            <h5>Manage Vehicles</h5>
+            <p>Add your RV or vehicle for a seamless check-in.</p>
+        </div>
+        <div class="col-md-3">
+            <i class="bi bi-credit-card-fill fs-1 mb-2"></i>
+            <h5>Payment Info</h5>
+            <p>Securely store and edit payment methods.</p>
+        </div>
+        <div class="col-md-3">
+            <i class="bi bi-map-fill fs-1 mb-2"></i>
+            <h5>Campground Info</h5>
+            <p>View amenities, maps, and activities.</p>
         </div>
     </div>
-
 </div>
